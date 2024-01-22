@@ -1,6 +1,6 @@
 <script>
 	function sendReply(id){
-		x='document.form'+id;
+		x = document['form' + id]
 		post_id = id;
 		user_id = x.user_id.value;
 		reply = x.user_reply.value;
