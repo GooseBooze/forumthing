@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    echo'
+<div id="div'.$post_id.'"></div>
+<form name="form'.$post_id.'">'; echo'
+  <div class="row">
+    <div class="col-sm-1">
+      <img src="" width="70" height="70" class="img img-responsive" alt="Your profile picture.">
+    </div>
+    <div class="col-sm-4">
+      <textarea placeholder="Your reply" name="user_reply" class="form-control" maxlength="250" rows="3" required></textarea>
+      <input type="hidden" name="user_id" value="'.$userId .'">
+      <input type="hidden" name="time" value="'.$time .'">
+      <input type="hidden" name="date" value="'.$date .'">
+    </div>
+    <div class="col-sm-1">
+      <button name="data" type="button" onclick="sendReply(\' '.$post_id.' \');">Reply</button>
+
+    </div>
+  </div>
+</form>
+</div>';
+</body>
+</html>
